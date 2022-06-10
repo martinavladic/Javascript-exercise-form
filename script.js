@@ -12,7 +12,6 @@ const godinaInvalidError = document.getElementById('godinaInvalidError');
 const emailValidError = document.getElementById('emailValidError');
 const saveBtn = document.getElementById('saveBtn');
 
-
 function hideAllErrors() {
     imeError.classList.add('hide');
     prezimeError.classList.add('hide');
@@ -89,8 +88,6 @@ function checkIsFormValid() {
 saveBtn.onclick = function () {
     if (checkIsFormValid()) {
         alert('Podaci uspješno spremljeni!');
-    }else {
-        alert('Nesto');
     }
 };
 
